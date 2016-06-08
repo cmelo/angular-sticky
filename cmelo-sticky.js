@@ -12,9 +12,16 @@ angular.module('cmelo.angularSticky', [])
 
 				if (nodename === 'body') {
 					wrapper = angular.element($window);
-					el = angular.element(document.querySelector('html'));
 				}
 
+				function getScrolltop (el) {
+					if (nodename === 'body') {
+						return document.querySelector('html').scrollTop +
+							document.querySelector('body').scrollTop;
+					} else {
+						return el.eq(0)[0].scrollTop;
+					}
+				}
 
 				function getOffset(el) {
 					if (!el) { return Infinity; }
@@ -51,7 +58,7 @@ angular.module('cmelo.angularSticky', [])
 						var offset_top = getOffset(sticker);
 						var offset_next = getOffset(stickers[i+1]);
 						var height = sticker.offsetHeight;
-						var scroll_top = el.eq(0)[0].scrollTop;
+						var scroll_top = getScrolltop(el);
 
 
 						var diff = scroll_top - offset_top + top;
