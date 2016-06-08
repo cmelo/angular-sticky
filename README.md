@@ -1,1 +1,1 @@
-# angular-sticky
+# cmelo-angular-sticky

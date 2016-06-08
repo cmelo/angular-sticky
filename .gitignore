@@ -1,3 +1,7 @@
+# Codekit
+*.codekit
+.sass-cache
+
 # Logs
 logs
 *.log

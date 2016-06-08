@@ -1,0 +1,64 @@
+
+@import "basic";
+
+
+html {height:100%;}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #000;
+	background: #fff;
+	position: relative;
+	font-size: 16px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+}
+
+input,
+textarea,
+select {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing:antialiased;
+}
+
+.space {height: 100%;}
+.hide {opacity: 0; transition: .3s all linear;}
+.cmelo-sticky-on .hide {opacity: 1;}
+
+.bodyscroll {margin-left: 50%; padding: 30px;
+
+	header {margin: 0 -30px; padding: 10px 30px;
+		background: rgba(0, 127, 255, .8);
+		border-top: 1px solid #888;
+		border-bottom: 1px solid #888;
+		h2 {margin: 0;}
+	}
+
+	table {width: 100%; margin: 1em 0;
+		td {padding: 5px 10px; border-bottom: 1px solid #bbb;}
+		thead {text-transform: uppercase; color: #888;
+			td {background: #fff; transition: .3s all linear; padding: 15px 10px;}
+			&.cmelo-sticky-on td {background: #ddd;}
+		}
+	}
+
+}
+
+.scrollwrap {width: 50%; position: fixed; top: 0; bottom: 0; left: 0; overflow: auto;
+	background: #eee; padding: 0 30px; box-sizing: border-box;
+
+	header {margin: 0 -30px; padding: 10px 30px;
+		background: rgba(0, 255, 127, .8);
+		border-top: 1px solid #888;
+		border-bottom: 1px solid #888;
+		h2 {margin: 0;}
+	}
+
+}
+
+
+h1 {font-size: 2.5em; font-weight: 300; margin: .4em 0;}
+h2 {font-size: 1.75em; font-weight: 300; margin: .8em 0;}
+p {margin: 1em 0;}
+

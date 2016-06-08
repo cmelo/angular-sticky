@@ -1,0 +1,85 @@
+
+
+<div class="scrollwrap" cmelo-sticky test="tt-wrap">
+
+	<h1>Angular Sticky Demo</h1>
+	<h2>Scrollable Container</h2>
+
+	<div ng-repeat="x in $ctrl.wrapped track by $index">
+		<header cmelo-sticky-top>
+			<h2>
+				Sticky Header {{x}}
+				<span class="hide">sticked</span>
+			</h2>
+		</header>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, tenetur iure eaque esse necessitatibus ex tempore nesciunt dicta quibusdam quod, nobis minima corporis nemo, libero non quo ratione a temporibus.
+		</p>
+	</div>
+	<div class="space"></div>
+</div>
+
+
+<div class="bodyscroll">
+
+	<h2>Scrollable Body</h2>
+
+	<div ng-repeat="x in $ctrl.body1 track by $index">
+		<header cmelo-sticky-top test="tt-body">
+			<h2>
+				Sticky Header
+				<span class="hide">sticked</span>
+			</h2>
+		</header>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti assumenda vero quae praesentium voluptates magnam, ipsum ad, nulla numquam eum minima neque atque, porro distinctio facere nisi nobis maxime enim.
+		</p>
+	</div>
+
+	<div>
+		<table>
+			<thead cmelo-sticky-top>
+				<tr>
+					<td>#</td>
+					<td>Table</td>
+					<td>num</td>
+					<td>num</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="x in $ctrl.table track by $index">
+					<td>{{$index+1}}</td>
+					<td>Lorem ipsum dolor sit amet</td>
+					<td>{{x*100}}</td>
+					<td>{{x*13}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<p ng-repeat="x in [1,2]">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti assumenda vero quae praesentium voluptates magnam, ipsum ad, nulla numquam eum minima neque atque, porro distinctio facere nisi nobis maxime enim.
+		</p>
+	</div>
+
+	<div ng-repeat="x in $ctrl.body2 track by $index">
+
+		<header cmelo-sticky-top test="tt-body">
+			<h2>
+				Sticky Header
+				<span class="hide">sticked</span>
+			</h2>
+		</header>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti assumenda vero quae praesentium voluptates magnam, ipsum ad, nulla numquam eum minima neque atque, porro distinctio facere nisi nobis maxime enim.
+		</p>
+		<hr cmelo-sticky-top>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti assumenda vero quae praesentium voluptates magnam, ipsum ad, nulla numquam eum minima neque atque, porro distinctio facere nisi nobis maxime enim.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti assumenda vero quae praesentium voluptates magnam, ipsum ad, nulla numquam eum minima neque atque, porro distinctio facere nisi nobis maxime enim.
+		</p>
+	</div>
+
+</div>
+<div class="space"></div>
+
