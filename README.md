@@ -11,7 +11,7 @@ Usage
 -------------
 
 Install with Bower
-```
+```bash
 # npm
 npm install cmelo-angular-sticky
 # bower
