@@ -1,5 +1,6 @@
 {
   "name": "cmelo-angular-sticky",
+  "version": "1.0.0",
   "description": "Position sticky for Angular",
   "main": "cmelo-sticky.js",
   "authors": [
@@ -8,6 +9,7 @@
   "license": "MIT",
   "keywords": [
     "sticky",
+    "postion sticky",
     "angular"
   ],
   "homepage": "https://github.com/cmelo/angular-sticky",
