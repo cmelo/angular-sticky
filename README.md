@@ -12,7 +12,10 @@ Usage
 
 Install with Bower
 ```
-bower install fsm-sticky-header
+# npm
+npm install cmelo-angular-sticky
+# bower
+bower install cmelo-angular-sticky
 ```
 
 Include JS file
