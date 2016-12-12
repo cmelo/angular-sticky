@@ -1,7 +1,7 @@
 
 angular.module('cmelo.angularSticky', [])
 
-	.directive('cmeloSticky', function ($window) {
+	.directive('cmeloSticky', ['$window', function ($window) {
 		return {
 			restrict: 'A',
 			link: function (scope, elem) {
@@ -95,6 +95,5 @@ angular.module('cmelo.angularSticky', [])
 
 			}
 		};
-	})
-
+	}])
 ;
