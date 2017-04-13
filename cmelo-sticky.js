@@ -43,6 +43,8 @@ angular.module('cmelo.angularSticky', [])
 					var stickers = [];
 
 					angular.forEach(stickers_all, function (sticker) {
+						if(sticker.offsetParent === null)
+							return;
 						var parent = getClosest(sticker, 'cmelo-sticky');
 						if (parent === elem.eq(0)[0]) {
 							stickers.push(sticker);
