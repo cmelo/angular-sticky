@@ -24,8 +24,14 @@ angular.module('cmelo.angularSticky', [])
 				}
 
 				function getOffset(el) {
-					if (!el) { return Infinity; }
-					return el.offsetTop + el.offsetParent.offsetTop;
+          var offsetTop = 0;
+          if (!el) { return Infinity; }
+          do {
+            if (!isNaN(el.offsetTop)) {
+              offsetTop += el.offsetTop;
+            }
+          } while (el = el.offsetParent);
+          return offsetTop;
 				}
 
 				function getClosest(el, attribute) {
